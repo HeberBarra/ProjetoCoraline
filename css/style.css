@@ -10,8 +10,16 @@
 body {
     display: grid;
     grid-template-columns: 10% 80% 10%;
-    row-gap: 2rem;
     background-color: #d5b7f6;
+}
+
+body.nav-visible {
+    grid-template-columns: 15% 85%;
+
+    .paragrafo-imagem {
+        width: 80%;
+    }
+
 }
 
 header {
@@ -28,20 +36,21 @@ header {
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    display: grid;
+    align-items: center;
     grid-column: 2;
     grid-row: 2;
 }
 
 .paragrafo-imagem {
+    margin: 1rem 0;
     display: block;
     width: 100%;
     background-color: #000000CC;
     color: #ffffff;
     border-radius: 1.2rem;
     padding: 1rem;
+    justify-self: center;
 
     img {
         border-radius: 1.2rem;
@@ -99,6 +108,13 @@ main {
         width: 100%;
         text-align: justify;
     }
+}
+
+nav {
+    background-color: #000000CC;
+    color: white;
+    grid-column: 1;
+    grid-row: 2 / 3;
 }
 
 @keyframes expand {
