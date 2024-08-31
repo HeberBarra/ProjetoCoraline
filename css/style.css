@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    row-gap: 2rem;
+    background-color: #d5b7f6;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / 4;
+    grid-row: 1;
+    height: 5rem;
+    background-color: #3a3944;
+    color: #ffffff;
+    font-size: 20pt;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.paragrafo-imagem {
+    display: block;
+    width: 100%;
+    background-color: #000000CC;
+    color: #ffffff;
+    border-radius: 1.2rem;
+    padding: 1rem;
+
+    img {
+        border-radius: 1.2rem;
+    }
+
+    @media screen and (max-width: 599px) {
+
+        .container-imagem {
+            display: flex;
+            justify-content: center;
+        }
+
+        img {
+            max-width: 100%;
+            margin: 1rem;
+        }
+
+    }
+    
+    @media screen and (min-width: 600px) {
+        img {
+            float: left;
+            max-height: 12rem;
+            margin-right: .5rem;
+            margin-bottom: .5rem;
+        }
+
+        #imagem-filme img {
+            float: right;
+            margin-right: 0;
+            margin-left: .5rem;
+        }
+    }
+
+    .expansao-imagem {
+        position: absolute;
+        animation: expand 1.5s 1;
+        height: 80vh;
+        z-index: 10;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);    
+
+        img {
+            padding: .5rem;
+            max-height: 100%;
+            border: solid #808080;
+            border-radius: 4rem;
+            background-color: #FFFFFF;
+        }
+
+    }
+
+    p {
+        width: 100%;
+        text-align: justify;
+    }
+}
+
+@keyframes expand {
+    
+    0% {
+        max-height: 12em;
+    }
+
+    100% {
+        max-height: 100%;
+    }
+
+}
