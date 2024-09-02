@@ -15,3 +15,7 @@ div.paragrafo-duplo {
         margin-left: .2rem;
     }
 }
+
+div.expansao-imagem:has(img.wybie) {
+    transform: translate(-50%, -100%);
+}
