@@ -17,6 +17,7 @@ header {
     display: flex;
     position: sticky;
     top: 0;
+    z-index: 20;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -88,9 +89,8 @@ main {
         z-index: 10;
         animation: expand 1.5s 1;
         height: 80vh;
-        top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);    
+        transform: translateX(-50%);
 
         img {
             padding: .5rem;
