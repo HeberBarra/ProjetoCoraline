@@ -16,6 +16,6 @@ div.paragrafo-duplo {
     }
 }
 
-div.expansao-imagem:has(img.wybie) {
+.expansao-imagem:has(.subir) {
     transform: translate(-50%, -100%);
 }

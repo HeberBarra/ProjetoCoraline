@@ -107,6 +107,10 @@ main {
     }
 }
 
+.expansao-imagem:has(.subir) {
+    transform: translate(-50%, -100%);
+}
+
 footer {
     display: flex;
     align-items: center;
