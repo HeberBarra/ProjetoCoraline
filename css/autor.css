@@ -1,0 +1,8 @@
+body {
+    grid-template-rows: 10% 80% 10%;
+    height: 100vh;
+}
+
+a {
+    color: #42e4ae;
+}

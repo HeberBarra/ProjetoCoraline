@@ -1,0 +1,49 @@
+nav {
+    display: none;
+    background-color: #000000DD;
+    top: 5rem;
+    position: fixed;
+    color: white;
+    padding-top: 1rem;
+    font-size: 1.4rem;
+
+    ul {
+        list-style: none;
+        width: 100%;
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+        
+        a:hover {
+            color: #d5b7f6;
+        }
+
+        img {
+            position: relative;
+            padding-right: .3rem;
+        }
+
+        #imagem-home {
+            top: 8%;
+        }
+
+        #imagem-personagens {
+            left: 2%;
+            top: 1%;
+        }
+
+        li {
+            padding-left: 1rem;
+        }
+
+        li#personagens {
+            padding-left: 0.7rem;
+
+            ul {
+                padding-left: 1.1rem;
+            }
+        }
+    }
+}

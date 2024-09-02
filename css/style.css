@@ -13,26 +13,24 @@ body {
     background-color: #d5b7f6;
 }
 
-body.nav-visible {
-    grid-template-columns: 15% 85%;
-
-    .paragrafo-imagem {
-        width: 80%;
-    }
-
-}
-
 header {
     display: flex;
+    position: sticky;
+    top: 0;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     grid-column: 1 / 4;
     grid-row: 1;
     height: 5rem;
     background-color: #3a3944;
     color: #ffffff;
     font-size: 20pt;
+
+    button {
+        position: absolute;
+        left: 1rem;
+    }
 }
 
 main {
@@ -87,9 +85,9 @@ main {
 
     .expansao-imagem {
         position: absolute;
+        z-index: 10;
         animation: expand 1.5s 1;
         height: 80vh;
-        z-index: 10;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);    
@@ -110,11 +108,16 @@ main {
     }
 }
 
-nav {
-    background-color: #000000CC;
-    color: white;
-    grid-column: 1;
-    grid-row: 2 / 3;
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1 / 4;
+    min-height: 2.5rem;
+    background-color: #3a3944;
+    color: #ffffff;
+    font-size: 16pt;
+    text-align: center;
 }
 
 @keyframes expand {

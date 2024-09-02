@@ -4,15 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
-    <script src="javascript/index.js" defer></script>
+    <script src="javascript/imagens.js" defer></script>
+    <script src="javascript/menu.js" defer></script>
     <title>Coraline</title>
 </head>
 
 <body class="nav-visible">
     <header>
-        <h1>Coraline</h1>
+        <button><img src="media/icons/menu.svg" alt="ícone menu"></button><h1>Coraline</h1>
     </header>
     <main>
         <div class="paragrafo-imagem">
@@ -54,19 +56,26 @@
     </main>
     <nav>
         <ul>
-            <li><a href="personagens.html">Personagens</a></li>
-            <ul>
-                <li><a href="personagens.html#coraline">Coraline</a></li>
-                <li><a href="personagens.html#gato">Gato</a></li>
-                <li><a href="personagens.html#pais">Pais</a></li>
-                <li><a href="personagens.html#vizinhos">Vizinhos</a></li>
-                <li><a href="personagens.html#outra-mae">Outra Mãe</a></li>
-                <li><a href="personagens.html#versoes-alternativas">Versões Alternativas</a></li>
-                <li><a href="personagens.html#wybie">Wybie</a></li>
-            </ul>
-            <li><a href="sobreautor.html">Sobre o Autor</a></li>
+            <li id="home"><img src="media/icons/home.svg" alt="ícone casa" id="imagem-home"><a href="index.html">Home</a></li>
+            <li id="personagens">
+                <img src="media/icons/user.svg" alt="ícone pessoa" id="imagem-personagens">
+                <a href="personagens.html">Personagens</a>
+                <ul>
+                    <li><a href="personagens.html#coraline">Coraline</a></li>
+                    <li><a href="personagens.html#gato">Gato</a></li>
+                    <li><a href="personagens.html#pais">Pais</a></li>
+                    <li><a href="personagens.html#vizinhos">Vizinhos</a></li>
+                    <li><a href="personagens.html#outra-mae">Outra Mãe</a></li>
+                    <li><a href="personagens.html#versoes-alternativas">Versões Alternativas</a></li>
+                    <li><a href="personagens.html#wybie">Wybie</a></li>
+                </ul>
+            </li>
+            <li><img src="media/icons/pen-tool.svg" alt="ícone caneta"><a href="sobreautor.html" id="imagem-caneta">Sobre o Autor</a></li>
         </ul>
     </nav>
+    <footer>
+        Licença MIT &copy; Heber Ferreira Barra
+    </footer>
 </body>
 
 </html>
